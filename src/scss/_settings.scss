@@ -1,0 +1,29 @@
+:root {
+  // Main Colors
+  --primary: #545268; // title-text, buttons, brackets
+  --secondary: #c68a70; // brackets
+  --tertiary: #ff5331; // stars, header-line, play-icon, secondary-text, brackets
+
+  // Neutral Colors
+  --black: #000000; // button-hover
+  --darker: #393939; // main-text, header-icon, section-line
+  --dark: #474553; // about-icons, section-icon
+  --gray: #5b5b5b; // sponsors-text
+  --light-gray: #8b8c91; // gray-text
+  --light: #fefefe; // light-bg
+  --lighter: #fafafa; // lighter-bg, footer-line, sponsors-body, stats-body
+  --white: #ffffff; // button-text, white-bg
+  --shadow: 2px 2px 20px #eee; //shadow
+
+  // Main Fonts
+  --primary-font: 'Poppins', sans-serif;
+  --secondary-font: 'Roboto', sans-serif;
+  --default-font: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+
+  // Util
+  --container-width: 1440px;
+  --modal-width: 1080px;
+  --header-height: 6rem;
+  --footer-height: 6rem;
+  --gutter-height: 0 6rem;
+}

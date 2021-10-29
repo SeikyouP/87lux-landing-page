@@ -1,0 +1,14 @@
+// Global Partials
+@forward 'reset';
+@forward 'settings';
+@forward 'mixins';
+@forward 'globals';
+@forward 'modals';
+
+// Section Partials
+@forward 'header';
+@forward 'hero';
+@forward 'about';
+@forward 'products';
+@forward 'testimonials';
+@forward 'footer';
