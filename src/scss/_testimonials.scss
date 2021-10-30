@@ -1,0 +1,116 @@
+.testimonials {
+  margin: 9rem 0;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    color: var(--light-gray);
+  }
+
+  &__card-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__card-item {
+    position: relative;
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+
+    &--active {
+      box-shadow: var(--shadow);
+    }
+  }
+
+  &__quote {
+    position: absolute;
+    top: 8.25rem;
+    left: 1rem;
+  }
+
+  &__avatar {
+    margin-bottom: 1.5rem;
+
+    img {
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+    }
+  }
+
+  &__stars {
+    margin-bottom: 1rem;
+
+    i {
+      color: var(--tertiary);
+    }
+  }
+
+  &__name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  &__comment {
+    line-height: 2;
+    color: var(--light-gray);
+
+    &--active {
+      color: var(--dark);
+    }
+  }
+
+  &__nav-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > * + * {
+      margin-left: 1rem;
+    }
+  }
+
+  &__left-arrow,
+  &__right-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-gray);
+    height: 24px;
+    width: 24px;
+    padding: 1.5rem;
+    border-radius: 50%;
+
+    i {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__right-arrow {
+    background-color: var(--darker);
+    color: var(--white);
+    transition: background-color 0.25s;
+
+    &:hover {
+      background-color: var(--gray);
+    }
+  }
+}
