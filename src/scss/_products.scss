@@ -12,10 +12,34 @@
     margin-bottom: 1.25rem;
     letter-spacing: -2px;
 
+    @media (max-width: 767px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 2.25rem;
+    }
+
+    @media (max-width: 427px) {
+      font-size: 2rem;
+    }
+
     &--alt {
       font-size: 3rem;
       text-align: left;
       margin-bottom: 0;
+
+      @media (max-width: 767px) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 575px) {
+        font-size: 1.75rem;
+      }
+
+      @media (max-width: 427px) {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -32,11 +56,15 @@
 
   &__list-item {
     display: flex;
-    align-items: center;
+    align-items: space-between;
     margin-bottom: 9rem;
 
     & > * + * {
       margin-left: 9rem;
+
+      @media (max-width: 991px) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -60,6 +88,18 @@
     position: relative;
     right: 0.25rem;
     line-height: 1.25;
+
+    @media (max-width: 767px) {
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 1.75rem;
+    }
+
+    @media (max-width: 427px) {
+      font-size: 1.5rem;
+    }
   }
 
   &__list-description {
@@ -79,9 +119,18 @@
     width: 50%;
     position: relative;
 
+    @media (max-width: 767px) {
+      max-width: 100%;
+    }
+
     img {
       width: 240px;
       height: 550px;
+
+      @media (max-width: 767px) {
+        width: 200px;
+        height: 460px;
+      }
     }
   }
 
@@ -93,10 +142,18 @@
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 1400px) {
+      left: 0;
+    }
+
     &.div-reverse {
       left: revert;
       right: 2rem;
       top: 3.25rem;
+
+      @media (max-width: 1400px) {
+        right: 0;
+      }
     }
 
     &.div-last {
@@ -113,6 +170,10 @@
       right: 2rem;
       background-color: var(--white);
 
+      @media (max-width: 1199px) {
+        display: none;
+      }
+
       &.span-reverse {
         left: 2rem;
       }
@@ -128,6 +189,10 @@
     border-radius: 50%;
     border: 1px dashed var(--tertiary);
 
+    @media (max-width: 991px) {
+      display: none;
+    }
+
     i {
       font-size: 2rem;
       color: var(--tertiary);
@@ -135,6 +200,10 @@
   }
 
   &__corner {
+    @media (max-width: 1023px) {
+      display: none;
+    }
+
     &--top-left {
       content: '';
       position: absolute;
@@ -236,6 +305,12 @@
     align-items: center;
     margin-bottom: 7rem;
 
+    @media (max-width: 767px) {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
     & > * + * {
       margin-left: 1.25rem;
     }
@@ -243,7 +318,7 @@
 
   &__card-item {
     display: flex;
-    align-items: center;
+    align-items: space-between;
     background-color: var(--white);
     box-shadow: var(--shadow);
     padding: 3rem;
@@ -252,6 +327,10 @@
 
   &__card-info {
     width: 50%;
+
+    @media (max-width: 1199px) {
+      width: 100%;
+    }
   }
 
   &__card-title {
@@ -276,11 +355,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 100%;
 
     img {
       width: 120px;
-      height: 280px;
+      // height: 280px;
+
+      @media (max-width: 1023px) {
+        width: 90px;
+      }
     }
   }
 

@@ -64,7 +64,35 @@ img {
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 var(--gutter-width);
+
+  @media (max-width: 1199px) {
+    padding: 0 4rem;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 0 3rem;
+  }
+
+  @media (max-width: 809px) {
+    padding: 0 2.5rem;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 2rem;
+  }
+
+  @media (max-width: 575px) {
+    padding: 0 1.5rem;
+  }
+
+  @media (max-width: 427px) {
+    padding: 0 1.25rem;
+  }
+
+  @media (max-width: 374px) {
+    padding: 0 1rem;
+  }
 
   &--modal {
     max-width: var(--modal-width);

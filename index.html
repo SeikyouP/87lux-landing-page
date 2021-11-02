@@ -44,8 +44,14 @@
       <div class="header__inner container">
         <nav class="header__navbar">
           <!-- Logo -->
-          <a href="" class="header__logo">Kombucha</a>
+          <div class="header__logo">
+            <a href="" class="header__name">Kombucha</a>
 
+            <!-- Header Toggle Button -->
+            <button class="header__toggle-button">
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
           <!-- Menu -->
           <div class="header__menu">
             <ul class="header__list">
@@ -293,7 +299,7 @@
             <!-- Card 1 -->
             <li class="products__card-item">
               <div class="products__card-info">
-                <h3 class="products__card-title">Pineapple, Lychee & Hibiscus</h3>
+                <h1 class="products__card-title">Pineapple, Lychee & Hibiscus</h1>
                 <p class="products__card-description">
                   We loved designing this entire series of labels for Singapore based Arie Kombucha.
                 </p>
@@ -307,7 +313,7 @@
             <!-- Card 2 -->
             <li class="products__card-item">
               <div class="products__card-info">
-                <h3 class="products__card-title">Peach, Mint & Lemon Balm</h3>
+                <h1 class="products__card-title">Peach, Mint & Lemon Balm</h1>
                 <p class="products__card-description">
                   We loved designing this entire series of labels for Singapore based Arie Kombucha.
                 </p>
@@ -457,24 +463,6 @@
               <p class="footer__description">
                 Sufficient particular impossible by reasonable oh expression is. Yet preference unpleasant.
               </p>
-              <!-- Social Icons -->
-              <ul class="footer__social-icons">
-                <li class="footer__social-icon">
-                  <a href="#" class="footer__social-link">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li class="footer__social-icon">
-                  <a href="#" class="footer__social-link">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="footer__social-icon">
-                  <a href="#" class="footer__social-link">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-              </ul>
             </div>
 
             <!-- Right Column  -->
@@ -542,8 +530,33 @@
               </div>
             </div>
           </div>
+
+          <!-- Social Icons -->
+          <ul class="footer__social-icons">
+            <li class="footer__social-icon">
+              <a href="#" class="footer__social-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="footer__social-icon">
+              <a href="#" class="footer__social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="footer__social-icon">
+              <a href="#" class="footer__social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+
           <!-- Copyright -->
-          <p class="footer__copyright">&copy; Copyright Kombucha. All Rights Reserved</p>
+          <div class="footer__copyright">
+            <p class="footer__copyright-info">
+              &copy; Copyright Kombucha.
+              <span class="footer__copyright-info footer__copyright-info--alt">All Rights Reserved</span>
+            </p>
+          </div>
         </div>
       </footer>
       <!-- End of Footer -->
@@ -557,3 +570,12 @@
 </html>
 
 <!-- Send Test to 87luxagency@gmail.com -->
+
+<!--
+  x-small: 0px - 575px,
+  small: 576px - 767px,
+  medium: 768px - 991px,
+  large: 992px - 1199px,
+  x-large: 1200px - 1399px,
+  xx-large: 1400px
+ -->
