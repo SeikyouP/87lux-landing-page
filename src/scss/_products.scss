@@ -29,6 +29,11 @@
       text-align: left;
       margin-bottom: 0;
 
+      @media (max-width: 991px) {
+        font-size: 2.75rem;
+        margin-bottom: 1rem;
+      }
+
       @media (max-width: 767px) {
         font-size: 2.5rem;
       }
@@ -59,6 +64,10 @@
     align-items: space-between;
     margin-bottom: 9rem;
 
+    @media (max-width: 575px) {
+      flex-flow: column wrap;
+    }
+
     & > * + * {
       margin-left: 9rem;
 
@@ -69,7 +78,7 @@
   }
 
   &__list-info {
-    width: 50%;
+    width: 100%;
   }
 
   &__list-name {
@@ -89,8 +98,16 @@
     right: 0.25rem;
     line-height: 1.25;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
       font-size: 2.5rem;
+    }
+
+    @media (max-width: 809px) {
+      font-size: 2.25rem;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 2rem;
     }
 
     @media (max-width: 575px) {
@@ -104,8 +121,12 @@
 
   &__list-description {
     font-size: 1.125rem;
-    margin-bottom: 4.25rem;
     line-height: 1.875;
+    margin-bottom: 4.25rem;
+
+    @media (max-width: 767px) {
+      margin-bottom: 1.75rem;
+    }
   }
 
   &__list-button {
@@ -116,11 +137,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 100%;
     position: relative;
 
     @media (max-width: 767px) {
       max-width: 100%;
+      justify-content: flex-end;
+
+      &--alt {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 575px) {
+      display: none;
     }
 
     img {
@@ -130,6 +160,11 @@
       @media (max-width: 767px) {
         width: 200px;
         height: 460px;
+      }
+
+      @media (max-width: 575px) {
+        width: 160px;
+        height: 370px;
       }
     }
   }
@@ -143,7 +178,7 @@
     justify-content: center;
 
     @media (max-width: 1400px) {
-      left: 0;
+      left: -4rem;
     }
 
     &.div-reverse {
@@ -152,7 +187,7 @@
       top: 3.25rem;
 
       @media (max-width: 1400px) {
-        right: 0;
+        right: -2rem;
       }
     }
 
@@ -189,7 +224,7 @@
     border-radius: 50%;
     border: 1px dashed var(--tertiary);
 
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
       display: none;
     }
 
@@ -268,6 +303,11 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3.5rem;
+
+    @media (max-width: 991px) {
+      flex-flow: column nowrap;
+      align-items: stretch;
+    }
   }
 
   &__card-nav {
@@ -305,14 +345,19 @@
     align-items: center;
     margin-bottom: 7rem;
 
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       width: 100%;
-      flex-direction: column;
+      flex-flow: column wrap;
       align-items: center;
     }
 
     & > * + * {
       margin-left: 1.25rem;
+
+      @media (max-width: 991px) {
+        margin: 0;
+        margin-top: 1.25rem;
+      }
     }
   }
 
@@ -357,13 +402,13 @@
     justify-content: center;
     width: 100%;
 
+    @media (max-width: 575px) {
+      display: none;
+    }
+
     img {
       width: 120px;
-      // height: 280px;
-
-      @media (max-width: 1023px) {
-        width: 90px;
-      }
+      height: 280px;
     }
   }
 
@@ -372,10 +417,26 @@
     align-items: center;
     justify-content: center;
     background-color: var(--lighter);
-    height: 21.75rem;
+    min-height: 21.75rem;
+
+    @media (max-width: 1400px) {
+      justify-content: space-between;
+    }
+
+    @media (max-width: 767px) {
+      padding: 1rem 0 2rem;
+    }
 
     & > * + * {
       margin-left: 6rem;
+
+      @media (max-width: 1400px) {
+        margin-left: 2rem;
+      }
+
+      @media (max-width: 991px) {
+        margin: 0 auto;
+      }
     }
   }
 
@@ -383,14 +444,32 @@
     border: 1rem solid var(--white);
     border-radius: 1rem;
     box-shadow: var(--shadow);
+
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
 
   &__stats-list {
     display: flex;
     align-items: center;
 
+    @media (max-width: 767px) {
+      justify-content: space-between;
+      flex-flow: column wrap;
+    }
+
     & > * + * {
       margin-left: 6rem;
+
+      @media (max-width: 1400px) {
+        margin-left: 2rem;
+      }
+
+      @media (max-width: 767px) {
+        margin: 0;
+        margin-top: 2rem;
+      }
     }
   }
 
@@ -399,11 +478,19 @@
     font-weight: 500;
     color: var(--primary);
     letter-spacing: -0.25rem;
+
+    @media (max-width: 1199px) {
+      text-align: center;
+    }
   }
 
   &__stats-detail {
     font-size: 1rem;
     font-weight: 500;
     color: var(--primary);
+
+    @media (max-width: 1199px) {
+      text-align: center;
+    }
   }
 }

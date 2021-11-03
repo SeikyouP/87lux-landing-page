@@ -38,7 +38,7 @@
     justify-content: space-between;
     margin-bottom: 4rem;
 
-    @media (max-width: 767px) {
+    @media (max-width: 809px) {
       flex-wrap: wrap;
       flex-grow: 1;
       margin-bottom: 0;
@@ -50,7 +50,7 @@
     align-items: center;
     flex-direction: column;
 
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       width: 50%;
       margin-bottom: 4.25rem;
     }
