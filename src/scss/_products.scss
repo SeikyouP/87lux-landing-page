@@ -324,10 +324,20 @@
     }
   }
 
+  &__title {
+    @media (max-width: 575px) {
+      text-align: center;
+    }
+  }
+
   &__card-nav {
     position: relative;
     display: flex;
     align-items: center;
+
+    @media (max-width: 575px) {
+      justify-content: center;
+    }
 
     a {
       display: flex;
@@ -382,6 +392,10 @@
     box-shadow: var(--shadow);
     padding: 3rem;
     width: 100%;
+
+    @media (max-width: 575px) {
+      padding: 3rem 2rem;
+    }
   }
 
   &__card-info {
@@ -398,16 +412,28 @@
     text-transform: uppercase;
     line-height: 1.25;
     margin-bottom: 1rem;
+
+    @media (max-width: 575px) {
+      text-align: center;
+    }
   }
 
   &__card-description {
     font-size: 0.75rem;
     line-height: 2;
     margin-bottom: 3rem;
+
+    @media (max-width: 575px) {
+      text-align: center;
+    }
   }
 
   &__card-button {
     @include mixins.button;
+
+    @media (max-width: 575px) {
+      margin: auto;
+    }
   }
 
   &__card-image {
@@ -416,8 +442,18 @@
     justify-content: center;
     width: 100%;
 
+    &--mobile {
+      display: none;
+    }
+
     @media (max-width: 575px) {
       display: none;
+
+      &--mobile {
+        display: flex;
+        margin: auto;
+        margin-bottom: 2rem;
+      }
     }
 
     img {
