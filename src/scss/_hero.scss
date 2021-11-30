@@ -37,6 +37,10 @@
     max-width: 360px;
     width: 100%;
 
+    &--alt {
+      display: none;
+    }
+
     @media (max-width: 1399px) {
       max-width: 320px;
     }
@@ -55,6 +59,12 @@
 
     @media (max-width: 767px) {
       display: none;
+
+      &--alt {
+        display: flex !important;
+        align-self: center;
+        margin: 2rem 0;
+      }
     }
   }
 
@@ -68,6 +78,8 @@
 
     @media (max-width: 767px) {
       padding-top: 0;
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -78,10 +90,15 @@
     position: relative;
     margin-bottom: 1.5rem;
 
-    &::after {
+    @media (max-width: 767px) {
+      align-self: center;
+      text-align: center;
+    }
+
+    &--line {
       content: '';
-      position: absolute;
-      left: 7rem;
+      display: inline-block;
+      margin-left: 1rem;
       bottom: 0.125rem;
       height: 0.125rem;
       width: 4rem;
@@ -117,6 +134,11 @@
 
     @media (max-width: 809px) {
       font-size: 4rem;
+    }
+
+    @media (max-width: 767px) {
+      align-self: center;
+      text-align: center;
     }
 
     @media (max-width: 427px) {
@@ -159,18 +181,34 @@
   &__description {
     max-width: 640px;
     margin-bottom: 1.5rem;
+
+    @media (max-width: 767px) {
+      align-self: center;
+      text-align: center;
+    }
   }
 
   &__price {
     font-weight: 500;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+
+    @media (max-width: 767px) {
+      align-self: center;
+      text-align: center;
+    }
   }
 
   &__line {
     height: 1px;
     max-width: 16.25rem;
     background-color: var(--dark);
+    width: 100%;
+
+    @media (max-width: 767px) {
+      align-self: center;
+      text-align: center;
+    }
   }
 
   &__button {
@@ -179,6 +217,11 @@
 
     @media (max-width: 991px) {
       margin: 2.75rem 0;
+    }
+
+    @media (max-width: 767px) {
+      align-self: center;
+      text-align: center;
     }
 
     &:hover {
