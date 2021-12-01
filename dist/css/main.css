@@ -1826,7 +1826,7 @@ img {
   color: var(--light-gray);
   font-size: 1.25rem;
   line-height: 1.75;
-  width: 50%;
+  width: 19.5rem;
 }
 @media (max-width: 991px) {
   .footer__description {
